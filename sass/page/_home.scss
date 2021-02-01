@@ -1,0 +1,25 @@
+.header{
+    max-width: $max-width;
+    height: 28rem;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-dark,.7),rgba($color-primary-light,.7)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top center;
+    
+    
+}
+.main{
+    max-width: $max-width;
+}
+.features{
+    padding: 2rem 0;
+}
+
+.header{
+    height: 30vh;
+}
+.features{
+    height: 50vh;
+}
+.footer{
+    height: 19vh;
+}

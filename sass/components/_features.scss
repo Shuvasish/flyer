@@ -1,0 +1,79 @@
+.main{
+
+}
+.features{
+    color: gray;
+
+    &__icon{
+        font-size: 6rem;
+    }
+    
+}
+.bold{
+    color: $color-primary;
+    font-size: 3rem;
+}
+.line-breaker{
+    display: block;
+    text-align: center;
+}
+.line-breaker:last-child{
+    margin-top: -1.5rem;
+}
+.icon{
+    width: 100%;
+    font-size: 0;
+    
+    .common-icon{
+        width: 33.3092%;
+        display: inline-block;
+        // text-align: center;
+        // background-color: orangered;
+        font-size: 2rem;
+        position: relative;
+        color: $color-primary;
+        
+    }
+    .common-icon:not(:last-child)::after{
+        content: "";
+        display: inline-block;
+        width: 65%;
+        height: .3rem;
+        background-color: gray;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-right: -32%;
+        
+    }
+
+}
+.icon_postion{
+    text-align: center;
+    margin-left: -3rem;
+}
+.center{
+    text-align: center;
+    margin-left: 2rem;
+    .bold{
+        font-size: 2rem;
+    }
+    .left-aling{
+        text-align: left;
+        margin-left: 2rem;
+    }
+    .para{
+        
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+        
+    }
+}
+.try{
+   &-left{
+    margin-right: -3rem;
+   }
+   &-right{
+       margin-left: -3rem;
+   }
+}

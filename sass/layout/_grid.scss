@@ -1,0 +1,132 @@
+
+.row{
+    // background-color: $color-primary;
+    // color:$color-white;
+    margin: 0 auto;
+    max-width: 114rem;
+    @include respond(tab-port){
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+        @include respond(tab-port){
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+    @include clearfix;
+    [class^="col-"]{
+        // background-color: $color-primary-dark;
+        float: left;
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+            
+            @include respond(tab-port){
+                margin-right:0;
+                margin-bottom: $gutter-vertical-small;
+            }
+       }
+
+       @include respond(tab-port){
+           width: 100% !important;
+       }
+    }    
+   .col-1-of-2{
+       width: calc(( 100% - #{$gutter-horizontal}) / 2 );
+       
+   }
+   .col-1-of-3{
+    width: calc(( 100% - (#{$gutter-horizontal}*2)) / 3 );
+    }
+    .col-2-of-3{
+        width: calc(((( 100% - (#{$gutter-horizontal}*2)) / 3)*2) + #{$gutter-horizontal} );
+        }
+    .col-1-of-4{
+        width: calc(( 100% - (#{$gutter-horizontal}*3)) / 4 );
+    }
+    .col-2-of-4{
+        width: calc((( 100% - (#{$gutter-horizontal}*3)) / 4 )*2 + #{$gutter-horizontal});
+    }
+    .col-3-of-4{
+        width: calc((( 100% - (#{$gutter-horizontal}*3)) / 4 )*3 + 2 * #{$gutter-horizontal});
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <section class="grid__demo">
+//             <div class="row">
+//                 <div class="col-1-of-2">
+//                    rowOne col 1 of 2
+//                 </div>
+//                 <div class="col-1-of-2">
+//                     rowOne col 1 of 2
+//                 </div>
+//             </div>
+//             <div class="row">
+//                 <div class="col-1-of-3">
+//                     rowTwo col 1 of two
+//                 </div>
+//                 <div class="col-1-of-3">
+//                     rowTwo col 1 of two
+//                 </div>
+//                 <div class="col-1-of-3">
+//                     rowTwo col 1 of two
+//                 </div>
+//             </div>
+//             <div class="row">
+//                 <div class="col-1-of-3">
+//                     rowThree col 1 of 3
+//                 </div>
+//                 <div class="col-2-of-3">
+//                     rowThree col 2 of 3
+//                 </div>
+//             </div>
+//             <div class="row">
+//                 <div class="col-1-of-4">
+//                     rowFour col 1 of 4
+//                 </div>
+//                 <div class="col-2-of-4">
+//                     rowFour col 2 of 4
+//                 </div>
+//                 <div class="col-1-of-4">
+//                     rowFour col 1 of 4
+//                 </div>
+//             </div>
+//             <div class="row">
+//                 <div class="col-1-of-4">
+//                     rowFour col 1 of 4
+//                 </div>
+//                 <div class="col-1-of-4">
+//                     rowFour col 1 of 4
+//                 </div>
+//                 <div class="col-1-of-4">
+//                     rowFour col 1 of 4
+//                 </div>
+//                 <div class="col-1-of-4">
+//                     rowFour col 1 of 4
+//                 </div>
+//             </div>
+//             <div class="row">
+//                 <div class="col-1-of-4">
+//                     rowFour col 1 of 4
+//                 </div>
+//                 <div class="col-3-of-4">
+//                     rowFour col 3 of 4
+//                 </div>
+                
+//             </div>
+//         </section>

@@ -1,0 +1,38 @@
+.footer{
+    background-color: #4F5E61;
+    padding: 2rem;
+    color: #eee;
+    &__heading{
+
+    }
+    &__para{
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        text-align: justify;
+
+        &--mod{
+            line-height: 2.5rem;
+            font-size: 1.5rem;
+            .i-l{
+                margin-left: -2rem;
+                color: $color-primary-light;
+                font-weight: 700;
+                
+            }
+        }
+
+    }
+}
+.twin{
+    margin-top: 3.2rem;
+    position: relative;
+}
+.temp{
+    position: absolute;
+    top: 35%;
+    left: 14%;
+    
+}
+.address{
+    font-size: 1.2rem;
+}
